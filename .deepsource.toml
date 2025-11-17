@@ -4,11 +4,6 @@ version = 1
 [[analyzers]]
 name = "secrets"
 
-[[analyzers]]
-name = "go"
-
-  [analyzers.meta]
-  import_root = "github.com/akshat-deepsource/test-analysis"
-
 [[code_formatters]]
 name = "gofumpt"
+enabled = true
