@@ -9,8 +9,8 @@ name = "go"
   [analyzers.meta]
   import_root = "github.com/akshat-deepsource/test-analysis"
 
-[[transformers]]
+[[code_formatters]]
 name = "gofumpt"
 
-[[transformers]]
+[[code_formatters]]
 name = "gofmt"
