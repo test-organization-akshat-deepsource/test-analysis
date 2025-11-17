@@ -1,3 +1,4 @@
+
 version = 1
 
 [[analyzers]]
@@ -11,3 +12,5 @@ name = "secrets"
 
 [[code_formatters]]
 name = "gofumpt"
+enabled = true
+
