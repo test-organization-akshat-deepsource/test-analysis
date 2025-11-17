@@ -10,7 +10,4 @@ name = "go"
   import_root = "github.com/akshat-deepsource/test-analysis"
 
 [[code_formatters]]
-name = "gofmt"
-
-[[code_formatters]]
 name = "gofumpt"
