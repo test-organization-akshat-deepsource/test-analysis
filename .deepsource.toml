@@ -9,5 +9,5 @@ name = "go"
 [[analyzers]]
 name = "secrets"
 
-[[code_formatters]]
+[[code-formatters]]
 name = "gofmt"
