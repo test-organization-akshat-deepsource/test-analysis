@@ -11,6 +11,3 @@ name = "secrets"
 
 [[code_formatters]]
 name = "gofumpt"
-
-[[code_formatters]]
-name = "gofmt"
