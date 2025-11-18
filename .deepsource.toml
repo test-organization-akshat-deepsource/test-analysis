@@ -14,3 +14,14 @@ name = "gofumpt"
 
 [[transformers]]
 name = "gofmt"
+
+
+
+[[transformers]]
+name = "gofumpt"
+
+
+
+
+[[transformers]]
+name = "gofmt"
