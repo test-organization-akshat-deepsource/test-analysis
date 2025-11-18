@@ -51,7 +51,6 @@ func (brkr *Breaker) AllowFlow() bool {
 }
 
 func (brkr *Breaker) UpdateStatus(respCode int) {
-
 	switch brkr.CurrentStatus {
 	case CLOSE:
 		brkr.RequestCounter++
