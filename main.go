@@ -30,8 +30,7 @@ func (r *statusRecorder) WriteHeader(status int) {
 }
 
 func main() {
-
-	for path, _ := range serviceRoutes {
+	for path := range serviceRoutes {
 		b, err := breaker.NewBreaker(0.5)
 		if err != nil {
 			log.Fatal(err.Error())
