@@ -30,8 +30,7 @@ func (r *statusRecorder) WriteHeader(status int) {
 }
 
 func main() {
-
-	for path, _ := range serviceRoutes {
+	for path := range serviceRoutes {
 		b, err := breaker.NewBreaker(0.5)
 		if err != nil {
 			log.Fatal(err.Error())
@@ -125,16 +124,16 @@ func EnvString(key, fallback string) string {
 }
 
 func getPostgresConnection() (*pgx.Conn, error) {
-    // Define the connection string (change with your actual connection string)
-    connConfig := "postgres://username:password@localhost:5432/dbname"
+	// Define the connection string (change with your actual connection string)
+	connConfig := "postgres://username:password@localhost:5432/dbname"
 
-    // Connect to the PostgreSQL database
-    conn, err := pgx.Connect(context.Background(), connConfig)
-    if err != nil {
-        return nil, fmt.Errorf("unable to connect to database: %v", err)
-    }
+	// Connect to the PostgreSQL database
+	conn, err := pgx.Connect(context.Background(), connConfig)
+	if err != nil {
+		return nil, fmt.Errorf("unable to connect to database: %v", err)
+	}
 
-    fmt.Println("Successfully connected to the database!")
+	fmt.Println("Successfully connected to the database!")
 
-    return conn, nil
+	return conn, nil
 }
